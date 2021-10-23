@@ -39,6 +39,7 @@
         <label>Cinnamon remain to fill: </label> <span id="remainfill">12</span>
     </div>
     <!-- change box size and show how many remain -->
+    <a href="productpage.html"><img src="img/back.png" class="back" width="100px" alt="back button"></img></a>
     <hr style="height:10px">
     <span class="dropdown"></span>
     <form action="/action_page.php">
@@ -56,12 +57,14 @@
     <!-- change glazing -->
     <div id="glazing-detail">
         <div id="left-column" style="width: 80%; float:left;">
-            <a href="productpage.html"><img src="img/back.png" class="back" width="100px" alt="back button"></img></a>
+            
             <h2>Flavor: Original</h2>
             <hr style="height:10px">
+            <img id ="img" src="img/no-glazing.png"></img>
             <div id="entry">
                 <div class="help-wrap">
-                    <button class="button">Glazing: None</button>
+                    <!-- <button class="button" id ="none">Glazing: None</button> -->
+                    <input type="radio" name="buttonGroup" value="none" id="none" ><label for="none" class ="button" id = "button">Glazing: None</label>
                     <form action="/action_page.php">
                         <!-- <label for="quantity">⊖</label> -->
                         <input type="number" id="quantity" name="quantity" min="0" max="12" class="chooseNumber"
@@ -71,7 +74,8 @@
                 </div>
 
                 <div class="help-wrap2">
-                    <button class="button">Glazing: Vanilla Milk</button>
+                    <!-- <button class="button" id ="vanilla">Glazing: Vanilla Milk</button> -->
+                    <input type="radio" name="buttonGroup" value="vanilla" id="vanilla" ><label for="vanilla" class ="button" id = "button">Glazing: Vanilla Milk</label>
                     <form action="/action_page.php">
                         <!-- <label for="quantity">⊖</label> -->
                         <input type="number" id="quantity" name="quantity" min="0" max="12" class="chooseNumber"
@@ -81,7 +85,8 @@
                 </div>
 
                 <div class="help-wrap">
-                    <button class="button">Glazing: Sugar-Free</button>
+                    <!-- <button class="button" id ="sugar-free">Glazing: Sugar-Free</button> -->
+                    <input type="radio" name="buttonGroup" value="sugar-free" id="sugar-free" ><label for="sugar-free" class ="button" id = "button">Glazing: Sugar-Free</label>
                     <form action="/action_page.php">
                         <!-- <label for="quantity">⊖</label> -->
                         <input type="number" id="quantity" name="quantity" min="0" max="12" class="chooseNumber"
@@ -91,7 +96,8 @@
                 </div>
 
                 <div class="help-wrap2">
-                    <button class="button">Glazing: Double-Chocolate</button>
+                    <!-- <button class="button" id ="chocolate" onclick="changeColor()">Glazing: Double-Chocolate</button> -->
+                    <input type="radio" name="buttonGroup" value="chocolate" id="chocolate" ><label for="chocolate" class ="button" id = "button">Glazing: Double-Chocolate</label>
                     <form action="/action_page.php">
                         <!-- <label for="quantity">⊖</label> -->
                         <input type="number" id="quantity" name="quantity" min="0" max="12" class="chooseNumber"

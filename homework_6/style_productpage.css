@@ -143,6 +143,8 @@ p{
     z-index:2;
     margin-top: 20px;
 }
+
+
 .button span {
     cursor: pointer;
     display: inline-block;
@@ -252,7 +254,7 @@ hr{
 }
 
 #glazing-detail{
-    width: 80%;
+    width: 75%;
     height: 500px;
     background-color: #0E78DE;
     margin:0px auto;
@@ -286,7 +288,7 @@ hr{
     color: #FFF9DC;
     background-color: #0E78DE;
     font-size:1.2em;
-    width: 300px;
+    width: 85%;
 }
 #chooseNumber{
         color: #FFF9DC;
@@ -327,3 +329,39 @@ input{
     width:90%;
     padding:30px;
 }
+
+
+input[type='radio'][name='buttonGroup'] { 
+    display:none; 
+}
+
+.label{
+    display: inline-block;
+    border-radius: 40px; 
+    border:#FFF9DC 5px solid ;
+    color: #FFF9DC;
+    background-color: #0E78DE;
+    font-size:1.2em;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s;
+    margin-left:40px;
+    cursor: pointer;
+    margin: 5px;
+    z-index:2;
+    margin-top: 20px;
+}
+
+input[type='radio'][name='buttonGroup']:checked + #button { 
+    background-color:#FF85D9;
+    color:#FFF9DC;
+ }
+
+ #img{
+     z-index: 3;
+     width:20%;
+     height:auto;
+     position:absolute;
+     left:3%;
+ }
