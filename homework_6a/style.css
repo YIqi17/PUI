@@ -56,8 +56,15 @@ a{
 
 #real_image{
     position: absolute;
-    top:7vh;
+    top:15vh;
     left: 60vw;
+    width: 30%;
+    height:auto;
+}
+
+.boxImage{
+    width:auto;
+    height:20vh;
 }
 p{
     font-weight: bold;
@@ -85,7 +92,7 @@ p{
     margin-left: 50px;
 }
 #wrap img{
-    padding-left: 80px;
+    padding-left: 8vw;
 }
 button{
     width:10px;
@@ -119,5 +126,5 @@ button{
 }
 
 .fa-angle-right {
-    margin-top:-20px;
+    margin-top:-35%;
 }
