@@ -75,10 +75,10 @@ p{
     padding: 20px;
     margin: 20px;
     position:absolute;
-    top:27%;
+    top:30%;
     left: 15%;
     line-height: 2em;
-    font-size: 15px;
+    font-size: 17px;
 }
 #section2{
     height:30vh;
@@ -112,7 +112,7 @@ button{
     font-weight: bold;
     color: #FF85D9;
     margin-left: -30px;
-    margin-top: 170px;
+    margin-top: 11%;
 }
 
 .circle_icon {
@@ -123,8 +123,9 @@ button{
     width:40px;
     height:40px;
     text-align: center;
+    margin-top:30%;
 }
 
 .fa-angle-right {
-    margin-top:-35%;
+    margin-top:-25%;
 }
