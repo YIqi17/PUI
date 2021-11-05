@@ -1,0 +1,131 @@
+#logo{
+    width:50%; 
+    height:auto;
+}
+#bar{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index:-1;
+  width:100vw;
+  height:60pt;
+  background-color:#0E78DE;
+}
+
+#section1bg{
+    position: absolute;
+    left: 0px;
+    top: 0vh;
+    height:60vh;
+    width:100vw;
+    z-index:-2;
+    background-color:#FF85D9;
+  }
+
+body{
+    background-color:#FFF9DC;
+    font-family: "Roboto";
+}
+
+.Navigation{
+   color:#FFF9DC;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   width:40vw;
+   left:60vw;
+   top:6vh;
+   position:absolute;
+
+}
+
+.nav_img{
+    padding:2px;
+    border: 3px solid #0E78DE;
+    border-radius: 50%;
+    width: 5em;
+}
+
+a{
+    text-decoration: none;
+    color:#FFF9DC;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#real_image{
+    position: absolute;
+    top:15vh;
+    left: 60vw;
+    width: 30%;
+    height:auto;
+}
+
+.boxImage{
+    width:auto;
+    height:20vh;
+}
+p{
+    font-weight: bold;
+    color:#FFF9DC;
+}
+#story{
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    position:absolute;
+    top:30%;
+    left: 15%;
+    line-height: 2em;
+    font-size: 17px;
+}
+#section2{
+    height:30vh;
+}
+#wrap{
+    display: flex;
+    top: 65vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-left: 50px;
+}
+#wrap img{
+    padding-left: 8vw;
+}
+button{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #0E78DE;
+    border: #FF85D9;
+    border-width: 10px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size:16px;
+}
+#right{
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF85D9;
+    margin-left: -30px;
+    margin-top: 11%;
+}
+
+.circle_icon {
+    background: #FFF9DC;
+    padding:4px;
+    border-radius: 50%;
+    border: 3px solid #FF85D9;
+    width:40px;
+    height:40px;
+    text-align: center;
+    margin-top:30%;
+}
+
+.fa-angle-right {
+    margin-top:-25%;
+}
