@@ -256,7 +256,12 @@ function removeItem(objString) {
         delete cartItems[obj.tag];
         sessionStorage.setItem("productInCart", JSON.stringify(cartItems))
         displayCart();
+        let productNumbers = sessionStorage.getItem('cartNumbers');
+        if (productNumbers) {
+            document.querySelector('.cart span').textContent = "Cart(" + productNumbers + ")";
+        }
     }
+
 
 }
 displayCart();
