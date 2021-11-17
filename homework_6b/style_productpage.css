@@ -612,8 +612,8 @@ h5{
   -ms-transform: translate(-50%, -50%);
   background-color: #0E78DE;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
+  font-size: 32px;
+  padding: 24px 36px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -622,10 +622,17 @@ h5{
 }
 
 .rightButton{
-    top: 250%;
+    top: 160vh;
     left: 85%;
 }
 .leftButton{
-    top: 250%;
+    top: 160vh;
     left:15%;
+}
+.carouselTitle{
+    width:30%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
 }

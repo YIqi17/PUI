@@ -239,20 +239,22 @@ function removeItem(objString) {
     var cartNumber = sessionStorage.getItem('cartNumbers');
     if (cartItemsString !== null) {
         var cartItems = JSON.parse(cartItemsString) // successfully loaded in the cart items
+        // change the cart totals
         if (cartTotal !== null){
             var cartTotal = parseInt(cartCost)
             console.log(parseInt([obj.price]))
             cartTotal = cartTotal - ([obj.price]*[obj.inCart])
             sessionStorage.setItem("totalCost", JSON.stringify(cartTotal))
-            // re-render the page to reflect change
+            
         }
+        // change the cart numbers
         if (cartNumber !== null){
             var cartNumber = parseInt(cartNumber)
             cartNumber = cartNumber -[obj.inCart]
             sessionStorage.setItem("cartNumbers", JSON.stringify(cartNumber))
             
         }
-        // console.log(cartItems);
+        // change session storaged items (products) using dictionary key
         delete cartItems[obj.tag];
         sessionStorage.setItem("productInCart", JSON.stringify(cartItems))
         displayCart();
@@ -266,8 +268,8 @@ function removeItem(objString) {
 }
 displayCart();
 
-//Extra credit carousel animation
-
+// Extra credit carousel animation
+// Added automatic animation~
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -278,13 +280,17 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  var button = document.getElementsByClassName("carouselButton");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+  
 }
+
+
 
 
 
