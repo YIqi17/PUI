@@ -2,27 +2,89 @@
 <html>
 
 <head>
-    <title>Portfolio Site</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    
-    <!-- libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- styles and js-->
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="main.js" type="text/javascript"></script>
+  <!--Bootstrap CSS libraries -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+  <!-- styles and js-->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="main.js" type="text/javascript"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <svg id="wave" height="100%" width="100%" viewBox ="0 0 375 812" preserveAspectRatio = "none">
+  <!-- <svg id="wave" height="100%" width="100%" viewBox ="0 0 375 812" preserveAspectRatio = "none">
       <path class = "wave"  d="M353.2,0s.717,260.166.717,304.688-36.326,54.388-36.326,101.389,36.326,58.244,36.326,102.506S353.2,816.77,353.2,816.77h29.176V0Z" transform="translate(-317.589)" fill ="#000000"></path>
-    </svg>
+    </svg> -->
+
+  <!-- <img src="img/Desktop1.jpg" id = "img" onclick="ani()"></img> -->
+  <!-- <div id='background'></div> -->
+  <!-- <img src="img/Desktop2.jpg" id ="background-img"></img> -->
+  <!-- <input name="" type="button" onclick="ani()" value="Click"> -->
+
+
+
+  <!-- Using bootstrap to make image and text sections responsive -->
+  <!-- Responsive Navigation Bar -->
+  <div class="container-fluid" id ="sect1">
+    <ul class="nav justify-content-end sticky-top navigationBar">
+      <li class="nav-item">
+        <a class="nav-link active nav-self line-through" href="#" onclick="ani()">Human Centered Designs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-self line-through" href="#" onclick="addStrike()">MultiMedia Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-self line-through" href="#" onclick="addStrike()">About Me</a>
+      </li>
+    </ul>
+    <!-- Responsive Sections -->
+    <div class="row row-main">
+      <div class="col-lg-6 col-sm-12 order-sm-2 order-lg-1">Text Column
+        
+        <div class="d-flex flex-column column-self">
+          <div class="p-2">
+            <h1 class="display-1">MultiMedia Projects</h1>
+          </div>
+          <div class="p-2">
+            <p>Hi, I am Yiqi.</p>
+            <p>
+              I have a passion for building multi-sensory experiences.
+              Projects include video-based motion works, hand-coded 
+              websites, game design, and tangible gadgets.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-self">VIEW WORKS</button>
+        </div>
+
+      </div>
+      <div class="col-lg-6 col-sm-12 order-sm-1 order-lg-2">
+        Image Column
+        <img src = "img/motion.png" alt ="An illustration of Yiqi's multimedia works"class="img-fluid">
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- javascript libraries -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
