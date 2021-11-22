@@ -68,17 +68,19 @@
 .row-main{
     margin-top:5%;
 }
-.column-self{
+.column-self, .column-self2{
     color:#F05C62;
     margin-top: 10%;
     margin-left: 5%;
     margin-right:10%;
 }
-
+.column-self2{
+    color:#0B62DE;
+    margin-top: 0%;
+}
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
   font-size: 130%;
   /* display: flex;
   align-items: center;
@@ -89,7 +91,12 @@ body {
   font-weight:thin;
   font-stretch: expanded;
 }
-
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
 .btn-self{
     font-family: "Akzidenz";
     padding-top: 2%;
@@ -102,13 +109,16 @@ body {
 div, img {
   width: 100%;
   /* height: 100%; */
-  background-color: #000000;
+  /* background-color: #000000; */
 }
+
 .transition{
   animation: pageTransition 8s ease-out 2s infinite;
   
 }
-
+.font-black{
+    color:black;
+}
 /* @keyframes melt-enter {
   0% {
     clip-path: path('M0 -0.12C8.33 -8.46 16.67 -12.62 25 -12.62C37.5 -12.62 35.91 0.15 50 -0.12C64.09 -0.4 62.5 -34.5 75 -34.5C87.5 -34.5 87.17 -4.45 100 -0.12C112.83 4.2 112.71 -17.95 125 -18.28C137.29 -18.62 137.76 1.54 150.48 -0.12C163.19 -1.79 162.16 -25.12 174.54 -25.12C182.79 -25.12 191.28 -16.79 200 -0.12L200 -34.37L0 -34.37L0 -0.12Z');
@@ -155,7 +165,24 @@ input{
     position:absolute;
 }
 
+.is-transitioning {
+    pointer-events: none;
+    cursor: progress;
+}
 
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    background-color: #FFF6ED;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/* Customize different screensizes */
 @media (min-width: 576px) {
 
 }
@@ -173,4 +200,7 @@ input{
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     
+ }
+ .design-self{
+     font-size: 5.5rem;
  }

@@ -23,7 +23,7 @@
 
 </head>
 <!-- Barba transition -->
-<body data-barba="wrapper" class ="black">
+<body data-barba="wrapper" class ="white">
   <!-- <svg id="wave" height="100%" width="100%" viewBox ="0 0 375 812" preserveAspectRatio = "none">
       <path class = "wave"  d="M353.2,0s.717,260.166.717,304.688-36.326,54.388-36.326,101.389,36.326,58.244,36.326,102.506S353.2,816.77,353.2,816.77h29.176V0Z" transform="translate(-317.589)" fill ="#000000"></path>
     </svg> -->
@@ -38,16 +38,16 @@
   <!-- contents that are changing -->
   <!-- Using bootstrap to make image and text sections responsive -->
   <!-- Responsive Navigation Bar -->
-  <div class="container-fluid black" data-barba="container">
+  <div class="container-fluid" data-barba="container" class ="white">
     <ul class="nav justify-content-end sticky-top navigationBar">
       <li class="nav-item">
-        <a class="nav-link active nav-self line-through" href="design.html" onclick="ani()">Human Centered Designs</a>
+        <a class="nav-link active nav-self line-through font-black" href="design.html" onclick="ani()">Human Centered Designs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-self line-through" href="#" onclick="addStrike()">MultiMedia Projects</a>
+        <a class="nav-link nav-self line-through font-black" href="index.html" onclick="addStrike()">MultiMedia Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-self line-through" href="#" onclick="addStrike()">About Me</a>
+        <a class="nav-link nav-self line-through font-black" href="#" onclick="addStrike()">About Me</a>
       </li>
     </ul>
     <!-- Responsive Sections -->
@@ -55,16 +55,16 @@
       <div class="row row-main">
         <div class="col-lg-6 col-sm-12 order-sm-2 order-lg-1">Text Column
 
-          <div class="d-flex flex-column column-self">
+          <div class="d-flex flex-column column-self2">
             <div class="p-2">
-              <h1 class="display-1">MultiMedia Projects</h1>
+              <h1 class="display-1 design-self">User-Centered Design</h1>
             </div>
             <div class="p-2">
               <p>Hi, I am Yiqi.</p>
               <p>
-                I have a passion for building multi-sensory experiences.
-                Projects include video-based motion works, hand-coded
-                websites, game design, and tangible gadgets.</p>
+                I am an MHCI student from Carnegie Mellon University, 
+                interested in user-centered design and research. I worked 
+                on both individual and multi-disciplinary team works</p>
             </div>
             <button type="button" class="btn btn-primary btn-self">VIEW WORKS</button>
           </div>
@@ -72,7 +72,7 @@
         </div>
         <div class="col-lg-6 col-sm-12 order-sm-1 order-lg-2">
           Image Column
-          <img src="img/motion.png" alt="An illustration of Yiqi's multimedia works" class="img-fluid">
+          <img src="img/design.png" alt="An illustration of Yiqi's multimedia works" class="img-fluid">
         </div>
       </div>
     </div>
@@ -89,13 +89,7 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
     <!-- For transition -->
-
-    <!-- unpkg -->
     <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
-
-    <!-- jsdelivr -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-
     <!-- For animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
 </body>
