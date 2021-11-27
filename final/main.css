@@ -259,10 +259,30 @@ p:hover {
 body {
     background: #131418;
   }
+.col-md-auto{
+  color:white;
+}
+.maintitle{
+  text-align: center;
+}
   
+.subtitle{
+  text-align: center;
+}
   
+.subtext{
+  text-align: center;
+  font-weight: thin;
+  font-style: normal;
+  font-stretch:normal;
+}
+  
+.bodytext{
+  pointer-events: none;
+  font-size: 1rem;
+  /* max-width: 850px; */
+}
 
-  
   
   /* Step 2: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
   
@@ -272,6 +292,15 @@ body {
     margin: 2.5vw auto;
   }
   
+  .btn-detail{
+    background-color: black;
+    border: 2px #fff solid;
+    width:40%;
+
+  }
+  .align{
+    text-align: center;
+  }
   
   /* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
   
@@ -279,6 +308,7 @@ body {
     padding: 5px;
     box-sizing: border-box;
       display:inline;
+
   }
   
   
