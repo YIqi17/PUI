@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!--Bootstrap CSS libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- styles and js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- For Layout -->
+    <!-- ensure all images loaded -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Masonry grid -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+     <!-- For style -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js" type="text/javascript"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+</head>
+
+<!-- Barba transition -->
+<body data-barba="wrapper" class="black">
+    <!-- <svg id="wave" height="100%" width="100%" viewBox ="0 0 375 812" preserveAspectRatio = "none">
+      <path class = "wave"  d="M353.2,0s.717,260.166.717,304.688-36.326,54.388-36.326,101.389,36.326,58.244,36.326,102.506S353.2,816.77,353.2,816.77h29.176V0Z" transform="translate(-317.589)" fill ="#000000"></path>
+    </svg> -->
+
+    <!-- <img src="img/Desktop1.jpg" id = "img" onclick="ani()"></img> -->
+    <!-- <div id='background'></div> -->
+    <!-- <img src="img/Desktop2.jpg" id ="background-img"></img> -->
+    <!-- <input name="" type="button" onclick="ani()" value="Click"> -->
+
+    <div class="loader"></div>
+
+    <!-- contents that are changing -->
+    <!-- Using bootstrap to make image and text sections responsive -->
+    <!-- Responsive Navigation Bar -->
+    <div class="container-fluid black" data-barba="container">
+        <ul class="nav justify-content-end sticky-top navigationBar">
+            <li class="nav-item">
+                <a class="nav-link nav-self line-through" href="index.html" onclick="addStrike()">Return Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-self line-through" href="#" onclick="addStrike()">About Me</a>
+            </li>
+        </ul>
+
+        <!-- Portfolio Page -->
+        <p class="filter line-through" href="" data-rel="all">All</p>
+        <p class="filter line-through" data-rel="web">Websites</p>
+        <p class="filter line-through" data-rel="motion">Motion Graphics</p>
+        <p class="filter line-through" data-rel="tangible">Tangible Items</p>
+        <div style="clear:both;"></div>
+        <div id="portfolio" class="container-fluid">
+
+            <div class="web all tile">
+                <a href="pro-chinese.html"><p class ="p-title">Chinese Type Collection Website</p></a>
+                <img src="img/chinese.gif" class = "thumb" alt="Yiqi's Web Interaction Project which collects 100 pieces of chinese typography arts from 1900-1999">
+            </div>
+            <div class="motion all tile">
+                <p class ="p-title">Synesthesia Exploration (with sound)</p>
+                <img src="img/sound.gif" class = "thumb" alt="Yiqi's Motion Graphics Project which explores Synesthesia (sight with sound)">
+            </div>
+            <div class="tile motion all">
+                <p class ="p-title">Retro Arcade Gaming Channel</p>
+                <img src="img/channel.gif" alt="Yiqi's Motion Graphics Project which explores Retro Arcade Gaming Channel">
+            </div>
+            <div class="tile web all">
+                <p class ="p-title">Weather Drawing Website (Forecasts) </p>
+                <img src="img/weather.gif" id ="long" class = "thumb" alt="Yiqi's Web Interaction Project which uses realtime weather forecast API to draw a abstract kaleidoscopic art">
+            </div>
+            <div class="tile motion all">
+                <p class ="p-title">Cyber Security Poster Series</p>
+                <img src="img/cybersecurity copy.gif" class = "thumb" alt="Yiqi's Motion Graphics Project which includes a five connected posters related to cyber-security">
+            </div>
+            <div class="tile tangible all">
+                <p class ="p-title">Branding: Joan Miro Exhibition</p>
+                <img src="img/miro.gif" class = "thumb" alt="Yiqi's Editorial Project which make exhibition materials for Joan Miro's MoMa exhibition">
+            </div>
+            <div class="tile motion all">
+                <p class ="p-title">Branding: Joan Miro Exhibition</p>
+                <img src="img/memory.gif" class = "thumb" alt="Yiqi's Editorial Project which make exhibition materials for Joan Miro's MoMa exhibition">
+            </div>
+            <div class="tile motion all">
+
+            </div>
+            <div class="tile web all">
+
+            </div>
+            <div class="tile motion all">
+
+            </div>
+            <div class="tile web all">
+
+            </div>
+            <div class="tile tangible all">
+
+            </div>
+            <div class="tile web all">
+
+            </div>
+            <div class="tile tangible all">
+
+            </div>
+            <div class="tile web all">
+
+            </div>
+            <div class="tile web all">
+
+            </div>
+            <div class="tile tangible all">
+
+            </div>
+        </div>
+        <div class="grid">
+
+
+            <!-- <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/736x/00/37/03/0037037f1590875493f413c1fdbd52b1--cool-beards-inspiring-photography.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/736x/cd/90/d9/cd90d9de63fa2c8e5c5e7117e27b5c18--gritty-portrait-photography-studio-photography.jpg">
+            </div>
+
+
+            <div class="grid-item">
+                <img
+                    src="https://1.bp.blogspot.com/-9QM7ciGXRkQ/V1hsB-wNLBI/AAAAAAAAMoA/eYbSHs00PTAjrI4QAmvYAIGCUe1AuRAnwCLcB/s1600/bryan_cranston_0095.jpg">
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="http://webneel.com/sites/default/files/images/project/best-portrait-photography-regina-pagles%20(10).jpg" />
+            </div>
+
+
+            <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/736x/dd/45/96/dd4596b601062eb491ea9bb8e3a78062--two-faces-baby-faces.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="http://www.marklobo.com.au/news/wp-content/uploads/2013/03/Melbourne_Portrait_Photographer_Mark_Lobo-Cowboy.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="https://format-com-cld-res.cloudinary.com/image/private/s--PcYqe7Zw--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/145054-8576001-Rob-Green-by-Zuzana-Breznanikova_7725_b_w.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img src="http://www.iefimerida.gr/sites/default/files/janbanning11.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/736x/66/bb/e7/66bbe7acc0d64da627afef440a29714b--portrait-photos-female-portrait.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/736x/25/34/b6/2534b6c18c659546463f13b2dc62d4ce--natural-portraits-female-portraits.jpg" />
+            </div>
+
+            <div class="grid-item">
+                <img
+                    src="https://s-media-cache-ak0.pinimg.com/originals/8d/67/12/8d671230ced871df8428b571ed6ec192.jpg" />
+            </div>
+
+        </div> -->
+
+
+
+
+        <!-- javascript libraries -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+
+        <!-- For transition -->
+        <!-- unpkg -->
+        <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
+
+        <!-- jsdelivr -->
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
+        <!-- For animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+</body>

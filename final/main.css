@@ -204,3 +204,108 @@ input{
  .design-self{
      font-size: 5.5rem;
  }
+
+#portfolio { 
+    width:100%; 
+    margin:20px 0px; 
+}
+
+.tile { 
+    float:left; 
+    min-height:300px; 
+    max-height:450px; 
+    width:50%; 
+    background-color: black;
+    margin-top: 5%;
+    /* border:1px #fff solid;  */
+}
+.tile:hover { 
+    opacity: 0.5; 
+}
+#long{
+  height:10%;
+}
+/* .web { 
+    background:#00C5CD;
+}
+.motion { 
+    background: #CC3232;
+}
+.tangible { 
+    background: #ddd; 
+} */
+.filter{ 
+    padding:10px; 
+    text-decoration: none; 
+    text-transform:uppercase; 
+    font-size: 12px; 
+    color: white; 
+    display:block; 
+    float:left;
+}
+.filter::after{
+    background-color: #007bff;
+
+}
+.p-title{
+  color:white
+}
+p:hover { 
+    cursor:pointer; 
+    background: #eee; 
+    color:#333; 
+}
+
+body {
+    background: #131418;
+  }
+  
+  
+
+  
+  
+  /* Step 2: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
+  
+  .grid {
+    text-align: center;
+    max-width: 95vw;
+    margin: 2.5vw auto;
+  }
+  
+  
+  /* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+  
+  .grid-item {
+    padding: 5px;
+    box-sizing: border-box;
+      display:inline;
+  }
+  
+  
+  /* Step 4: Add media queries (subjective) to make the whole grid resposive. */
+  
+  @media (min-width: 500px) {
+    .grid-item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .grid-item {
+      width: 33.333%;
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .grid-item {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 2100px) {
+    .grid-item {
+      width: 20%;
+    }
+  }
+
+  

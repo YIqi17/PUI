@@ -109,3 +109,29 @@ function init(){
 window.addEventListener('load', function(){
     init();
 });
+
+
+
+$(function() {
+    var selectedClass = "";
+    $("p").click(function(){
+    selectedClass = $(this).attr("data-rel");
+$("#portfolio").fadeTo("fast", 0.1);
+    $("#portfolio div").not("."+selectedClass).fadeOut();
+setTimeout(function() {
+  $("."+selectedClass).fadeIn();
+  $("#portfolio").fadeTo(500, 1);
+}, 500);
+    
+});
+});
+
+
+
+$(".grid").imagesLoaded(function() {
+    $(".grid").masonry({
+      itemSelector: ".grid-item"
+    });
+  });
+
+  
