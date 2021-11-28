@@ -2,14 +2,14 @@
 /* Import Akzidenz Grotesque Font */
 @font-face {
     font-family: "Akzidenz";
-    src: url("assets/akzidenz.otf") format("opentype");
+    src: url("../font/akzidenz.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Akzidenz";
-    src: url("assets/AkzidenzGroteskStd-Light.otf") format("opentype");
+    src: url("../font/AkzidenzGroteskStd-Light.otf") format("opentype");
     font-weight: thin;
     font-style: normal;
     font-stretch:normal;
@@ -17,14 +17,14 @@
 
 @font-face {
     font-family: "Akzidenz";
-    src: url("assets/AkzidenzGroteskStd-LightEx.otf") format("opentype");
+    src: url("../font/AkzidenzGroteskStd-LightEx.otf") format("opentype");
     font-weight: thin;
     font-stretch: expanded;
 }
 
 @font-face {
     font-family: "Akzidenz";
-    src: url("assets/AkzidenzGroteskStd-BoldEx.otf") format("opentype");
+    src: url("../font/AkzidenzGroteskStd-BoldEx.otf") format("opentype");
     font-weight: bold;
     font-stretch: expanded;
 }
@@ -181,26 +181,6 @@ input{
     opacity: 0;
 }
 
-
-/* Customize different screensizes */
-@media (min-width: 576px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
- }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
- }
  .design-self{
      font-size: 5.5rem;
  }
