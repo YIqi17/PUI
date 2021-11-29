@@ -91,10 +91,10 @@ body {
   font-weight:thin;
   font-stretch: expanded;
 }
-.white{
+#white{
     background-color: white;
 }
-.black{
+#black{
     background-color: black;
 }
 .btn-self{
