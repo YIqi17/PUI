@@ -97,6 +97,12 @@ body {
 #black{
     background-color: black;
 }
+.white{
+  background-color: white;
+}
+.black{
+  background-color: black;
+}
 .btn-self{
     font-family: "Akzidenz";
     padding-top: 2%;

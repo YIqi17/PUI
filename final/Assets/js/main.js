@@ -73,7 +73,7 @@ function init(){
     barba.hooks.before(() => {
 
         document.querySelector('html').classList.add('is-transitioning');
-        barba.wrapper.classList.add('is-animating');
+        // barba.wrapper.classList.add('is-animating');
 
     });
 
@@ -81,7 +81,7 @@ function init(){
     barba.hooks.after(() => {
 
         document.querySelector('html').classList.remove('is-transitioning');
-        barba.wrapper.classList.remove('is-animating');
+        // barba.wrapper.classList.remove('is-animating');
 
     });
 
