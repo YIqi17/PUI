@@ -238,7 +238,7 @@ input{
 }
 p:hover { 
     cursor:pointer; 
-    background: #eee; 
+    /* background: #eee;  */
     color:#333; 
 }
 
