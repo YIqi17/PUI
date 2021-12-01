@@ -105,13 +105,7 @@ function init(){
     })
 
 }
-
-window.addEventListener('load', function(){
-    init();
-});
-
-
-
+//add the filter
 $(function() {
     var selectedClass = "";
     $("p").click(function(){
@@ -125,6 +119,13 @@ setTimeout(function() {
     
 });
 });
+
+window.addEventListener('load', function(){
+    init();
+});
+
+
+
 
 
 
