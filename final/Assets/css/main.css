@@ -304,36 +304,32 @@ p:hover {
 
   }
   
-  
-  /* Step 4: Add media queries (subjective) to make the whole grid resposive. */
-  
-  @media (min-width: 500px) {
-    .grid-item {
-      width: 50%;
-    }
-  }
-  
-  @media (min-width: 1000px) {
-    .grid-item {
-      width: 33.333%;
-    }
-  }
-  
-  @media (min-width: 1700px) {
-    .grid-item {
-      width: 25%;
-    }
-  }
-  
-  @media (min-width: 2100px) {
-    .grid-item {
-      width: 20%;
-    }
-  }
-
   .extend{
     height:400vh;
   }
   .viewport-front{
     height:100vh;
   }
+
+  /* resposive. */
+  
+  @media (max-width: 500px) {
+    .display-1{
+      font-size: 3rem;
+    }
+    .viewport-front{
+      height:150vh;
+    }
+  }
+  @media (max-width: 1000px) {
+    .viewport-front{
+      height:200vh;
+    }
+  }
+  
+  /* @media (min-width: 1700px) {
+    .display-1{
+      font-size: 9rem;
+    }
+  } */
+
